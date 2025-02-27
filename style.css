@@ -1,0 +1,158 @@
+@font-face{
+    font-family: Roboto;
+    src: url(Roboto-Regular.ttf);
+    font-weight: normal;
+  }
+
+body{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    margin:0;
+    background-image: url(background.jpg);
+}
+
+img{
+    height: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-wall{
+  width: fit-content;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.eightyeight-by-thirtyone {
+  width: 88px;
+  height: 31px;
+  margin-left: 0;
+  margin-right: 0;
+  padding:2px;
+  display:inline-block
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+h1{
+    font-family: "Roboto", serif;
+}
+
+h2{
+    font-family: "Roboto", serif;
+}
+
+h3,h4,h5{
+    font-family: "Roboto", serif;
+    font-weight: normal;
+    overflow-wrap: break-word;
+}
+
+a{
+    color: black;
+}
+
+a:visited{
+    color: black;
+}
+
+.sidePanel{
+    width: 100%;
+}
+
+.centerPanel{
+    width:100%-1vw;
+    padding: 1vw;
+    font-family: "Roboto", serif;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.poetry{
+    text-align: center;
+}
+
+.navLinks{
+    text-align: center;
+}
+
+.footer{
+    text-align: center;
+}
+
+details {
+  cursor: pointer;
+}
+
+summary::marker {
+  display: none;
+  content: "";
+}
+
+details>summary span.details-more-button{
+ display:inline;
+ margin-left: auto;
+ float:right;
+}
+
+details>summary span.details-less-button{
+ display:none;
+ margin-left: auto;
+ float:right;
+}
+
+details[open] summary span.details-more-button {
+  display:none;
+}
+details[open] summary span.details-less-button {
+  display:inline;
+}
+
+img.gig-poster {
+ max-width: 50%; 
+}
+
+img.flex-obedient {
+ max-width: 50%; 
+}
+
+.flexrow {
+  display: flex;
+}
+
+.flexcolumn {
+  flex: 50%;
+  padding: 1em;
+}
+
+.flexcolumn img.gig-poster {
+ max-width: 100%;
+ width: 100%;
+ height:auto;
+}
+
+.flexcolumn img.flex-obedient {
+ max-width: 100%;
+ width: 100%;
+ height:auto;
+}
+
+
+@media only screen and (max-aspect-ratio: 1/1) {
+    body{
+        grid-template-columns: 0% 100% 0%;
+    }
+}
