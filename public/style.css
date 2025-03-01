@@ -8,7 +8,8 @@ body{
     display:grid;
     grid-template-columns: 20% 60% 20%;
     margin:0;
-    background-image: url(background.jpg);
+    background-image: url(starsbkg.gif);
+    color: white;
 }
 
 img{
@@ -62,11 +63,11 @@ h3,h4,h5{
 }
 
 a{
-    color: black;
+    color: white;
 }
 
 a:visited{
-    color: black;
+    color: white;
 }
 
 .sidePanel{
@@ -85,12 +86,42 @@ a:visited{
     text-align: center;
 }
 
-.navLinks{
+.navbar-content{
+    width:40%;
+    text-align: center;
+}
+
+.navbar-content h1{
+    font-size:max(2em, 3vh);
+}
+
+.navbar-bookend{
+    width:30%;
+}
+
+.bookend-left{
+    margin-right:0;
+    height:100%;
+}
+
+.bookend-right{
+    margin-left:0;
+    height:100%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.button-wall{
     text-align: center;
 }
 
 .footer{
     text-align: center;
+    padding-top:1em;
+}
+
+.footer img{
+    filter: invert(100%);
 }
 
 details {
@@ -150,6 +181,20 @@ img.flex-obedient {
  height:auto;
 }
 
+.framed{
+ border:60px solid transparent;
+ border-radius:20%;
+ border-image:url(antiqueframe.gif) stretch;
+ border-image-slice: 200 fill;
+}
+
+.ontv{
+ border: solid transparent;
+ border-width: 60px 30px 100px 30px; 
+ border-radius:10px 10px 110px 110px;
+ border-image:url(sonypvm.png) stretch;
+ border-image-slice: 165 90 180 90 fill;
+}
 
 @media only screen and (max-aspect-ratio: 1/1) {
     body{
